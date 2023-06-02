@@ -1,0 +1,35 @@
+body{
+    background-color: #ccc;
+}
+div{
+    border: 1px solid black;
+    margin: 10px 100px;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: #ccc;
+}
+h1{
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 50px;
+    margin: 0px 400px;
+    padding: 10px;
+}
+p{
+    font-size: larger;
+}
+h2{
+    margin-top: 50px;
+}
+
+a{
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    color: rgb(83, 83, 150);
+}
+a:hover{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(156, 155, 155);
+}
