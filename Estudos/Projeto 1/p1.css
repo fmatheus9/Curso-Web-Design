@@ -1,0 +1,109 @@
+body{
+    background-color: rgb(206, 206, 206);
+    margin: 0;
+    padding: 1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#img{
+    background-image: url(Frontend.png);
+    background-position: right center;
+    padding: 150px;
+    text-align: center;
+    color: white;
+}
+#img header{
+    font-size: 50px;
+    padding: 10px;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 2px black;
+}
+#img p{
+    font-size: 20px;
+    background-color: rgb(0, 0, 0, .3);
+    border-radius: 10px;
+    padding: 5px;
+    margin: auto;
+    width: 500px;
+
+}
+#html{
+
+    background-color: white;
+    margin: 30px 100px 30px;
+    padding: 10px;
+}
+#html h2{
+    margin-top: 10px;
+    background-color: rgb(230, 230, 230);
+    padding: 10px;
+    border-bottom-style: groove;
+}
+#html footer{
+    background-color: rgb(202, 202, 202);
+    border-radius: 10px;
+    padding: 10px;
+    width: 80px;
+}
+#CSS{
+
+    background-color: white;
+    margin: 30px 100px;
+    padding: 10px;
+}
+#CSS h2{
+    margin-top: 10px;
+    background-color: rgb(230, 230, 230);
+    padding: 10px;
+    border-bottom-style: groove;
+}
+#CSS footer{
+    background-color: rgb(202, 202, 202);
+    border-radius: 10px;
+    padding: 10px;
+    width: 80px;
+}
+#JS{
+
+    background-color: white;
+    margin: 30px 100px;
+    padding: 10px;
+}
+#JS h2{
+    margin-top: 10px;
+    background-color: rgb(230, 230, 230);
+    padding: 10px;
+    border-bottom-style: groove;
+}
+#JS footer{
+    background-color: rgb(202, 202, 202);
+    border-radius: 10px;
+    padding: 10px;
+    width: 80px;
+}
+#fim{
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    padding: 50px;
+    background-color: rgb(94, 94, 94);
+    opacity: 0.6;
+}
+aside{
+    padding-top: 10px;
+    margin-top: 10px;
+    text-align:right;
+    position: fixed;
+    top:24px;
+    right: 24px;
+
+}
+aside a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    border: 1px solid white;
+    background-color: rgb(49, 49, 49);
+    padding: 10px;
+    gap: 10px;
+}

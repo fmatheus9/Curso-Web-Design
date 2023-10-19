@@ -1,0 +1,15 @@
+Semântica{
+    <header> Cabeçalho
+    <nav> Navegação prioncipal da pagina, aquilo que não vai mudar na página 
+    <main> Conteúdo prioncipal da pagina
+    <footer> Rodapé
+    <section> Agrupar um conjunto de informaçãoes relacionadas 
+    <article> Um pequeno pedaço de conteúdo 
+    <aside> Qualquer conteúdo aparte do conteúdo da página
+}
+
+Não semânticas{
+    O motor de busca não entende que isto tem um significado para o conteúdo da PÁGINA
+    <div> Bloco, ocupa 100% da area disponivel
+    <span> Linha 
+}

@@ -1,0 +1,120 @@
+<!--Quando aplica o felx no container, as divs viram flex itens, sao impactados pelo display flex sao as diretas dentro do container, divs dentro desses
+divs por sua vez não sofrem alteraçoes
+
+-Justify-content: define como o browser distribui o espaço entre e ao redor dos itens horizontalmente. 
+1.	CENTER – alinha os itens no centro
+2.	FLEX-START – alinha os itens no início do container
+3.	FLEX-END – alinha os itens no final do container
+4.	SPACE-BETWEEN – alinha o primeiro e o segundo item nos cantos
+5.	SPACE-AROUND – alinha os itens uniformemente. Os itens têm um espaço de metade do tamanho em cada extremidade.
+6.	SPACE-EVENLY - alinha os itens uniformemente no espaço. Os itens têm espaço igual ao seu redor.
+
+
+-aling-items: define como o browser distribui espaço entre e ao redor dos itens verticalmente.
+1.	Center – alinha os itens no centro do container
+2.	Flex-start – alinha os itens no inicio do container 
+3.	Flex-end – alinha os itens no final do container
+4.	Baseline - itens são alinhados como suas linhas de base alinhadas.
+5.	Stretch – os tines são esticados para preencher o container
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: flex;
+            border: 1px solid black;
+            height: 300px;
+            width: 50%;
+            padding: 10px;
+            margin: 10px;
+        }
+        #container div{
+            border: 1px solid red;
+            height: 50%;
+            width: 10px;
+            margin: 10px;
+            padding: 50px;
+        }
+        #container2{
+            border: 1px solid black;
+            height: 350px;
+            width: 50%;
+            padding: 10px;
+            margin: 10px;
+        }
+        #container2 div{
+            border: 1px solid red;
+            height: 50px;
+            margin: 10px;
+            padding: 10px;
+        }
+        #container3{
+            display: flex;
+            border: 1px solid black;
+            height: 300px;
+            width: 50%;
+            padding: 10px;
+            margin: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        #container3 div{
+            border: 1px solid red;
+            height: 50px;
+            width: 10px;
+            margin: 10px;
+            padding: 50px;
+        }
+
+    </style>
+</head>
+    <body>
+        <div id="container">
+            <div>
+                1
+            </div>
+            <div>
+                2
+            </div>
+            <div>
+                3
+            </div>
+            <div>
+                4
+            </div>
+        </div>
+        <div id="container2">
+            <div>
+                1
+            </div>
+            <div>
+                2
+            </div>
+            <div>
+                3
+            </div>
+            <div>
+                4
+            </div>
+        </div>
+        <div id="container3">
+            <div>
+                1
+            </div>
+            <div>
+                2
+            </div>
+            <div>
+                3
+            </div>
+            <div>
+                4
+            </div>
+        </div>
+    </body>
+</html>

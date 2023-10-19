@@ -1,0 +1,74 @@
+<!--Position - Posisionar os elementos na tela
+position-satatic - é o valor padrão, os elementos aparece no browser na mesma ordem do código
+
+position-relative - Altera o posicionamento referente a ela mesma, mantem a posição original e se altera a partir dela mesma porem o resto do conteúdo não se altera,
+então a div sofrendo alteração pode "vazar" de um container ou invadir outras.
+
+position-absolute - passa a se relacionar com o documento, então a div sai do container. A não ser que a div container esteja posicionada, sem ser static, 
+ai a div com o posicionamento absolute passa a se relacionar com o container. 
+
+position-fixed -  sempre se relaciona com o browser, ou seja, sai do container
+
+position-sticky--> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            background-color: rgb(255, 0, 0, .5);
+            padding: 10px;
+            width: 90%;
+            height: 100px;
+            position: sticky;
+            top: 0;
+            bottom: 0;
+        }
+        #div2{
+            background-color: rgba(30, 255, 0, 0.5);
+            padding: 10px;
+            width: 80%;
+            height: 50px;
+            position: relative;
+            left: 100px;
+            
+        }
+        #div3{
+            background-color: rgba(38, 0, 255, 0.5);
+            padding: 10px;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+
+        }
+    </style>
+</head>
+    <body>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, laborum porro nulla aperiam fugiat voluptatum temporibus hic. 
+        Rerum labore repudiandae consequuntur perspiciatis quia molestiae, obcaecati, quo odit facilis aut ab.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptatibus est pariatur ullam repellendus aut quos, earum, 
+        corporis iusto beatae dolorum voluptatem nihil unde ducimus recusandae quia ipsum tempora et.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur culpa doloribus obcaecati, suscipit ullam provident tenetur quasi nam quam asperiores, 
+        quidem eligendi non consequuntur, in sapiente iusto quia eum ea.</p>
+        <div id="div1">
+            1
+            <div id="div2">
+                2
+                <div id="div3">
+                    3
+                </div>
+            </div>
+        </div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, laborum porro nulla aperiam fugiat voluptatum temporibus hic. 
+        Rerum labore repudiandae consequuntur perspiciatis quia molestiae, obcaecati, quo odit facilis aut ab.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptatibus est pariatur ullam repellendus aut quos, earum, 
+        corporis iusto beatae dolorum voluptatem nihil unde ducimus recusandae quia ipsum tempora et.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur culpa doloribus obcaecati, suscipit ullam provident tenetur quasi nam quam asperiores, 
+        quidem eligendi non consequuntur, in sapiente iusto quia eum ea.</p>
+    </body>
+</html>

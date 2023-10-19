@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades de Medida</title>
+    <style>
+        html{
+            font-size: 62.5%;
+            /*1em = 10px*/
+        }
+        h1{
+            font-size: 3.4em;
+        }
+        p{
+            background-color: #ccc;
+            width: 10em;
+            font-size: 1.6em;
+            /*16px*/
+        }
+        b{
+            font-size: 2rem;
+            /*20px*/
+        }
+    </style>
+</head>
+    <body>
+        <h1>
+            Unidade de Medida
+        </h1>
+        <p>
+            em --> 1 em equivale a 16px, é mais adequado do que ultilizar px pois sofre as alterações do usuário. É sempre relativa ao tamanho de fonte do elemento
+            pai, ou seja, se em um parágrafo o font-size estiver com o valor de 3em = 30px, numa tag <-b-> <b>dentro desse parágrafo</b> se o  valor em atribuido a ela
+            for de 1em vai ter o tamanho de 30px, para aumentar ou diminuir precisa fazer o calculo em relação a tag <-p->
+        </p>
+        <p>
+            rem --> o "r" é rooting, siginifca que a fonte vai se comportar igual ao em a principio, mas diferente do em o rem nao é relativo ao elemento pai e sim 
+            a "raiz" do elemento, no caso a tag html.
+        </p>
+        <p>
+            Podemos colocar essas unidades de medida em outros lugares como margin, padding, heigth, whidit etc. So é preciso ficar atento a conversão das medidas.
+        </p>
+    </body>
+</html>

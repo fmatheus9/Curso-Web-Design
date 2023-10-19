@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-classes em links</title>
+    <style>
+        a,h2{
+            font-family: sans-serif;
+            padding: 5px;
+        }
+        div{
+            border: 1px solid red;
+            padding: 16px;
+            margin: 100px 600px;
+            border-radius: 10px;
+            background-color: #ccc;
+        }
+        a{
+            display: inline-block;
+        }
+        a:hover{
+            border: 1px solid black;
+            background-color: aqua;
+            border-radius: 5px;
+
+        }
+        a:active{
+            background-color: blue;
+        }
+
+    </style>
+</head>
+    <body>
+        <div>
+            <h2>pseudo-classes em links</h2>
+            <a href="display.html" target="_blank"> DISPLAY </a> <br>
+            <a href="exemplo.html" target="_blank"> EXEMPLO </a>
+            <p>VEJA MAIS EXEMPLOS AQ: <a href="#" target="_blank">AAAAA</a></p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+Sintaxe: 
+
+    seletor{propriedade:valor;}
+    h1{
+        color: red;
+        font-size: 16px;
+    }
+
+Como incluir:
+    inline
+    interno
+    externo
+
+Funcoes:
+    font-family: formata a familia da fonte
+    font-size: tamanho da fonte
+    font-style: itálico ou n
+    text-aling: posição do texto
+    text-decoration: decoraçõa
+    text-ident: 
+    text-transform: maiusculo, minúsculo etc
+    color: muda a cor
+    background-color: cor de fundo
+    
+BOXMODEL:
+    margin:auto; 
+
+DISPLAY:
+    inline- não geram quebra de linha e ocupam o espaço necessario para o conteúdo. LARGURA EM ELEMENTO DE LINHA N TEM EFEITO, ASSIM COMO ALTURA 
+    block- ocupam todo a largura disponivel no container e geram quebra de linha.
+    inline-block- permite a aplicação de elementos block porem permanece como elemento de linha
+    none- esconde os elementos na tela 
+
+pseudo-classes em links:
+    a:link{....}
+    a:visited{...}
+    a:hover{...}
+    a:active{...}
+
+list-style:
+    list-style-type: 
+    list-style-position:
+    list-style-image:
+    list-style:type position imagem:

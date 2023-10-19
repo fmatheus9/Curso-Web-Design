@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(92, 132, 218);
+    color: rgb(0, 0, 0);
+    font-size: large;
+    font-family: Arial;
+}
+
+h2{
+    text-align: center;
+    border: 2px solid rgb(7, 86, 122);
+    border-radius: 50px;
+    padding: 12px;
+    margin: 0px 620px;
+    text-transform: uppercase;
+    background-color: rgb(12, 100, 122);
+}
+
+p{
+    margin: 16px 120px;
+    font-style: italic;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}

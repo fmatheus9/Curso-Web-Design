@@ -1,0 +1,109 @@
+OVerflow - serve para tratar o conteúdo que exede, 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Fit content</title>
+
+    <style>
+        body {
+            margin-bottom: 500px;
+        }
+
+        .container {
+            border: 2px solid black;
+            padding: 16px;
+            width: 300px;
+            margin-bottom: 16px;
+            height: 300px;
+            background-color: rgba(255, 0, 0, .5);
+
+        }
+
+        .item {
+            background-color: blueviolet;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        .fit-content .item {
+            width: fit-content;
+        }
+
+        .min-content .item {
+            width: min-content;
+        }
+
+        .max-content .item {
+            width: max-content;
+        }
+
+        .overflow-hidden {
+            overflow: hidden; /*Todo conteudo que exede a div esta escondido*/
+        }
+
+        .overflow-scroll {
+            overflow: scroll; /* Esconde o conteúdo e coloca a barra de scroll, tanto na horizontal quanto vertical*/
+        }
+
+        .overflow-auto {
+            overflow: auto; /* So coloca o scroll no eixo q precisa*/
+        }
+
+        .overflow-x-hidden {
+            overflow-x: hidden; /*esconde o scroll no eixo y*/
+        }
+
+        .overflow-y-hidden {
+            overflow-y: hidden;
+        }
+
+        .overflow-x-scroll {
+            overflow-x: scroll;
+        }
+
+        .overflow-visible {
+            overflow: visible; /*é o padrao, deixa tudo vazando das boxes*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container fit-content overflow-auto">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, corrupti.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ex voluptas earum fuga
+            eaque cumque deleniti, excepturi aspernatur minus assumenda nesciunt delectus alias. In, eaque!</div>
+
+    </div>
+
+    <div class="container min-content overflow-scroll">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, corrupti.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ex voluptas earum fuga
+            eaque cumque deleniti, excepturi aspernatur minus assumenda nesciunt delectus alias. In, eaque!</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta doloremque, exercitationem
+            sequi, cupiditate natus magnam quia a repellat quis similique animi ex totam ullam sed debitis provident
+            nostrum excepturi fuga reiciendis labore voluptatum ad! Debitis minima voluptas consequuntur necessitatibus
+            ab sit doloremque ad officiis quisquam tenetur dolorem quia adipisci officia incidunt aliquam, praesentium
+            tempore illo, amet dolores nesciunt rem! Consectetur eos officia aut officiis recusandae, corporis ipsa
+            quas! Non aliquam totam eius fuga, dolores enim!</div>
+    </div>
+
+    <div class="container max-content overflow-auto">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, corrupti.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ex voluptas earum fuga
+            eaque cumque deleniti, excepturi aspernatur minus assumenda nesciunt delectus alias. In, eaque!</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta doloremque, exercitationem
+            sequi, cupiditate natus magnam quia a repellat quis similique animi ex totam ullam sed debitis provident
+            nostrum excepturi fuga reiciendis labore voluptatum ad! Debitis minima voluptas consequuntur necessitatibus
+            ab sit doloremque ad officiis quisquam tenetur dolorem quia adipisci officia incidunt aliquam, praesentium
+            tempore illo, amet dolores nesciunt rem! Consectetur eos officia aut officiis recusandae, corporis ipsa
+            quas! Non aliquam totam eius fuga, dolores enim!</div>
+    </div>
+</body>
+
+</html>
